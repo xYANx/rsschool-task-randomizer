@@ -53,7 +53,7 @@ class SecondFragment : Fragment(), BackPressedLestenerInterface {
         }
     }
     private fun generate(min: Int, max: Int): Int {
-        return Random.nextInt(min, max)
+        return (min..max).random()
     }
 
     companion object {
